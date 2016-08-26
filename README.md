@@ -13,9 +13,9 @@ _ _ _
 
 ####Description des travaux d’atelier
 
-T1 . **Atelier Pixels** - mardi, semaine 2
+A1 . **Atelier Pixels** - mardi, semaine 2
 
-• Réaliser un sketch en colorisant sa surface à l’aide d’une méthode exclusivement matricielle, c’est-à-dire que les valeurs de couleurs sont assignées directement aux pixels. Donc on n’utilise aucune des primitives – rect() – comme stratégie de remplissage. On peut considérer le chargement d’images comme source de données. On évite l’utilisation des commandes set() ou get() pour lire la donnée de couleur. On lui préfère la commande pixels[]. Enfin, on voit comment extraire les valeurs RGB ou HSB d’une couleur par les opérateurs <i>Bit Shift</i>.
+• Réaliser un sketch en colorisant sa surface à l’aide d’une méthode exclusivement matricielle, c’est-à-dire que les valeurs de couleurs sont assignées directement aux pixels. Donc on n’utilise aucune des primitives – rect(), line(), quad() – comme stratégie de remplissage. On peut considérer le chargement d’images comme source de données. On évite l’utilisation des commandes set() ou get() pour lire ou écrire la donnée de couleur. On lui préfère la commande pixels[]. Enfin, on voit comment extraire les valeurs RGB ou HSB d’une couleur grâce aux opérateurs <i>Bit Shift</i>.
 
 Notions à considérer :
 
