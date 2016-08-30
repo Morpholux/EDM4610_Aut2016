@@ -46,9 +46,13 @@ void draw() {
   } else {
     background(img1);
 
-    clip(0, 200, 200, 200); // cadrage de la portion visible (coin gauche, coin haut, largeur, hauteur)
+    // Commande clip() >> Permet de définir le rectangle d’une portion visible, tel un masque.
+    // La zone devient restrictive de tous les affichages qui suivront, jusqu’au prochain recadrage. 
+    // Quatre arguments : coin gauche, coin haut, largeur, hauteur.
+    // Les valeurs sont relatives au sketch et non à l’image qui s’affichera.
+    clip(0, 200, 200, 200); 
     blendMode(DIFFERENCE); // Le blendmode est appliqué à l’image qui suit
-    image(img2, -mouseX/2, 200-mouseY/2); // Position absolue (et non relative au clipping)
+    image(img2, -mouseX/2, 200-mouseY/2); // Positions absolues (et non relatives au rectangle du clipping)
     blendMode(BLEND); // On revient au blendmode par défaut
 
 
