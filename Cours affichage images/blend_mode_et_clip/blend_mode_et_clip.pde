@@ -4,7 +4,7 @@
 // Crédits : Joshua Davis pour l’usage du blendMode(BLEND);
 
 /*
-Modes supportés : 
+Modes de fusion supportés :
  
  BLEND - linear interpolation of colours: C = A*factor + B. This is the default blending mode.
  
@@ -32,7 +32,7 @@ boolean fondSeul = false;
 
 void setup() {
   img1 = loadImage("img1.jpg");
-  surface.setSize(img1.width, img1.height);
+  surface.setSize(img1.width, img1.height); // 400 x 400 px
   background(0);
   fill(255);
   noStroke();
@@ -50,21 +50,22 @@ void draw() {
     // La zone devient restrictive de tous les affichages qui suivront, jusqu’au prochain recadrage. 
     // Quatre arguments : coin gauche, coin haut, largeur, hauteur.
     // Les valeurs sont relatives au sketch et non à l’image qui s’affichera.
-    clip(0, 200, 200, 200); 
-    blendMode(DIFFERENCE); // Le blendmode est appliqué à l’image qui suit
-    image(img2, -mouseX/2, 200-mouseY/2); // Positions absolues (et non relatives au rectangle du clipping)
+
+    clip(0, 0, 200, 200); // Quadrant supérieur gauche
+    blendMode(LIGHTEST); // Le blendmode est appliqué à l’image qui suit
+    image(img3, -mouseX/2, -mouseY/2); // Positions absolues (et non relatives au rectangle du clipping)
     blendMode(BLEND); // On revient au blendmode par défaut
 
+    clip(0, 200, 200, 200); // Quadrant inférieur gauche 
+    blendMode(DIFFERENCE); // Le blendmode est appliqué à l’image qui suit
+    image(img2, -mouseX/2, 200-mouseY/2);
+    blendMode(BLEND); // On revient au blendmode par défaut
 
-    clip(200, 200, 200, 200); // cadrage de la portion visible
+    clip(200, 200, 200, 200); // Quadrant inférieur droit
     blendMode(SCREEN); // Le blendmode est appliqué à l’image qui suit
     image(img3, mouseX/2, mouseY/2);
     blendMode(BLEND); // On revient au blendmode par défaut
 
-    clip(0, 0, 200, 200); // cadrage de la portion visible
-    blendMode(LIGHTEST); // Le blendmode est appliqué à l’image qui suit
-    image(img3, -mouseX/2, -mouseY/2);
-    blendMode(BLEND); // On revient au blendmode par défaut
 
     // Retour à la vue globale de toute la surface du sketch
     clip(0, 0, width, height);
