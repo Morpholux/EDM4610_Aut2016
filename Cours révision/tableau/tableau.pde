@@ -1,7 +1,7 @@
 // Révision tableau
 
 int [] ma_liste = new int[10];
-for (int i = 1; i<10; i++){ // Notez le i qui débutte à 1
+for (int i = 1; i<10; i++){ // Notez le i qui débute à 1
   ma_liste[i-1] = i; // Décalage entre l’index de la cellule et sa valeur //<>//
 }
 printArray(ma_liste);
