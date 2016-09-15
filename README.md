@@ -25,7 +25,7 @@ Notions à considérer :
 
 A2 . **Atelier tracé vectoriel** - vendredi, semaine 2
 
-• Réaliser un sketch présentant un motif ou une structure graphique, idéalement animée. Le dessin des figures se fait à l’aide d’une méthode exclusivement vectorielle, c’est-à-dire qu’elles sont dotées de tracés (droites, courbes), et donc de points de contrôle (ancrage, levier) pouvant être contrôlés depuis le code. On évite l’utilisation des primitives 2D rect() ou ellipse(), car on construit ses propres formes. Bravo à ceux qui exploreront l’exportation de leurs rendus en format PDF.
+• Réaliser un sketch présentant un motif ou une structure graphique, idéalement animée. Le dessin des figures se fait à l’aide d’une méthode exclusivement vectorielle, c’est-à-dire qu’elles sont dotées de tracés (droites, courbes), et donc de points de contrôle (ancrage, levier) pouvant être déplacés depuis le code. On évite l’utilisation des primitives 2D rect() ou ellipse(), car on construit ses propres formes. Bravo à ceux qui exploreront l’exportation de leurs rendus en format PDF.
 
 Notions à considérer :
 
