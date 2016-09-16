@@ -2,6 +2,8 @@
 // Syntaxe Processing version 2.2.1
 // jeudi, 11 septembre 2014
 
+int posY, sens;
+
 void setup() {
   size(600, 600, FX2D);
   // FX2D > mode de rendu superbe pour traduire le vectoriel
