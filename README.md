@@ -33,3 +33,14 @@ Notions à considérer :
 
 <br>
 
+A3 . **Atelier gestion de données et d’événements** - mardi, semaine 3
+
+• Créer un sketch qui repose sur l’interprétation statistique d’une propriété de votre choix, d’un événement particulier. Par exemple, les variations de vitesse de déplacement de la souris. On explore tant les conditions binaires (dedans/dehors, actif/inactif) que les états continus (près/loin, beaucoup/peu). On procède à l’analyse de nos données et on exploite les résultats. Ceux-ci influenceront le visuel de quelque manière que ce soit.
+L’objectif consiste à se familiariser aux concepts de gestion de données (tableaux de valeurs, pige, signaux, événements), à appliquer des seuils (treshold), des bornes (constrain), des filtres, des [valeurs sentinelles](https://en.wikipedia.org/wiki/Sentinel_value) (flag), etc. On cherche à enrichir le système d’affichage de comportements plus complexes, moins déterministes en apparence.
+
+Notions à considérer :
+
+`map(), random(), noise(), max(), min(), floor(), dist(), boolean`
+
+<br>
+
