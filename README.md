@@ -50,7 +50,7 @@ A4 . **Atelier objet et ArrayList** - vendredi, semaine 3
 
 Notions à considérer :
 
-`class, extends, ArrayList, add(), new, clear(), remove(), size(), .get(), .set()`
+`class, extends, ArrayList, <>, .size(), .add(), new, .clear(), .remove(), .get()`
 
 <br>
 
