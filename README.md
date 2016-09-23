@@ -44,3 +44,13 @@ Notions à considérer :
 
 <br>
 
+A4 . **Atelier objet et ArrayList** - vendredi, semaine 3
+
+• Créer un sketch qui repose sur la programmation orientée objet et les tableaux Java (ArrayList). Les principaux avantages de cette forme de programmation consistent à créer sur commande des instances d’une classe, chacune des entités disposant de propriétés adressables individuellement. Combinées à l’ajout ou le retrait d’objets à des tableaux Java, ces méthodes d’instanciation offrent l’avantage de gérer efficacement une large population d’objets typés. On suggère donc de construire des motifs ou des mondes en conséquence.
+
+Notions à considérer :
+
+`class, extends, ArrayList, add(), new, clear(), remove(), size(), .get(), .set()`
+
+<br>
+
