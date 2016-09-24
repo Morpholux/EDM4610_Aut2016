@@ -47,7 +47,7 @@ Notions à considérer :
 A4 . **Atelier objet et ArrayList** - vendredi, semaine 3
 
 • Créer un sketch qui repose sur la programmation orientée objet et les tableaux Java (ArrayList). Les principaux avantages de cette forme de programmation consistent à créer sur commande des instances d’une classe, chacune des entités disposant de propriétés adressables individuellement. Combinées à l’ajout ou le retrait d’objets à des tableaux Java, ces méthodes d’instanciation offrent l’avantage de gérer efficacement une large population d’objets typés. On suggère donc de construire des motifs ou des mondes en conséquence.
-Suggestion d’exercice : des flocons de neige tombent en tournoyant; chaque flocon a une taille et une forme légèrement différente (structure des branches) et sa vitesse de rotation varie suivant la proximité d’autres flocons.
+Suggestion d’exercice : des flocons de neige tombent en tournoyant; chaque flocon a une taille et une forme légèrement différente (structure des branches) et sa vitesse de rotation varie suivant la proximité d’autres flocons. On pourrait également implémenter une opération qui fait disparaître le flocon sur lequel on clique : validation pour reconnaître quelle est l’instance sous la souris et suppression de celle-ci dans la liste.
 
 Notions à considérer :
 
