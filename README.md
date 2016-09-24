@@ -47,10 +47,21 @@ Notions à considérer :
 A4 . **Atelier objet et ArrayList** - vendredi, semaine 3
 
 • Créer un sketch qui repose sur la programmation orientée objet et les tableaux Java (ArrayList). Les principaux avantages de cette forme de programmation consistent à créer sur commande des instances d’une classe, chacune des entités disposant de propriétés adressables individuellement. Combinées à l’ajout ou le retrait d’objets à des tableaux Java, ces méthodes d’instanciation offrent l’avantage de gérer efficacement une large population d’objets typés. On suggère donc de construire des motifs ou des mondes en conséquence.
+Suggestion d’exercice : des flocons de neige tombent en tournoyant; chaque flocon a une taille et une forme légèrement différente (structure des branches) et sa vitesse de rotation varie suivant la proximité d’autres flocons.
 
 Notions à considérer :
 
 `class, extends, ArrayList, <>, .size(), .add(), new, .clear(), .remove(), .get()`
+
+<br>
+
+A5 . **Atelier PVector et simulation de forces physiques** - mardi, semaine 4
+
+• Créer une animation dont les mouvements sont gérés par des opérations sur les PVector. On s’efforce d’introduire des simulations de forces physiques : vitesse, accélération, friction, gravité, déviation, etc. À la base, il faut exploiter la méthodologie des trois vecteurs de base : location, velocity, acceleration. Il faut ensuite introduire une force externe qui viendra influencer l’élan initial. Par exemple, une force de friction, un mouvement brownien, un rebond, etc.
+
+Notions à considérer :
+
+`PVector, .add(), .sub(), .set(), mag(), .setMag(), .normalize(), .mult(), .limit(), .cross()`
 
 <br>
 
