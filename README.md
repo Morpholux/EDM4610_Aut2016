@@ -65,3 +65,13 @@ Notions à considérer :
 
 <br>
 
+A6 . **Introduction à TouchDesigner - survol des opérateurs de texture (TOPs)** - vendredi, semaine 4
+
+• Créer un système d’affichage simple dans TouchDesigner. On peut explorer les divers jeux de traitement, les filtres, le compositing, les masques. Il faut d’abord bien maîtriser la question des résolutions (Common page) et du positionnement (transformation). Suggestion : d’exercice : combiner plusieurs images et exploiter des masques animés permettant de les dévoiler partiellement.
+
+Notions à considérer :
+
+[First things to Know about TouchDesigner](https://www.derivative.ca/wiki088/index.php?title=First_Things_to_Know_about_TouchDesigner), [Sweet 16 TOPs](https://www.derivative.ca/wiki088/index.php?title=TOP#Sweet_16_TOPs), [Movie File In TOP](https://www.derivative.ca/wiki088/index.php?title=Movie_File_In_TOP)
+
+<br>
+
