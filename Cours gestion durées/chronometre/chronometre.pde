@@ -18,11 +18,11 @@ void draw() {
 }
 
 void mousePressed() {
-  if (!chronoActif) {
+  if (!chronoActif) { // chrono n’est pas en marche
     tempsZero = millis();
     chronoActif = true;
   } 
-  else {
+  else { // le chrono est marche, alors…
     tempsUn = millis();
     tempsEcoule = tempsUn - tempsZero;
     tempsEcoule *= 0.001;
@@ -30,4 +30,3 @@ void mousePressed() {
     chronoActif = false;
   }
 }
-
