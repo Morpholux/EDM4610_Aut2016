@@ -75,3 +75,13 @@ Notions à considérer :
 
 <br>
 
+A7 . **Gestion des durées dans Processing** - mardi, semaine 5
+
+• Créer un système pouvant interpréter une suite de signaux (comme les pulsations sonores d’un métronome), déduire la fréquence – le BPM – et exploiter cette donnée pour synchroniser une animation.
+
+Notions à considérer :
+
+`millis(), Timer Java`
+
+<br>
+
