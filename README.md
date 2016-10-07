@@ -87,7 +87,7 @@ Notions à considérer :
 
 A8 . **TouchDesigner - survol des «channel operators» (CHOPs)** - vendredi, semaine 5
 
-• Explorer quelques opérateurs de la famille CHOP, afin de mieux saisir leur usage dans le contexte de votre réseau, qu’il s’agisse de récupérer les données d’une prothèse de contrôle (souris, clavier, Leap, Kinect…) ou de générer des valeurs dans le temps, en vue d’une animation. Explorer également les CHOPs qui vont permettre de modifier (lisser, filtrer, convertir, traduire) la donnée. Par ailleurs, on peut expérimenter avec les procédés de détection en vue du projet de mi-session.
+• Explorer quelques opérateurs de la famille CHOP, afin de mieux saisir leur usage dans le contexte de votre programme (Network dans TouchDesigner), qu’il s’agisse de récupérer les données d’une prothèse de contrôle (souris, clavier, Leap, Kinect…) ou de générer des valeurs dans le temps, en vue d’une animation. Explorer également les CHOPs qui vont permettre de modifier (lisser, filtrer, convertir, traduire) la donnée. Par ailleurs, on peut expérimenter avec les procédés de détection en vue du projet de mi-session.
 
 Notions à considérer :
 
@@ -97,11 +97,11 @@ Notions à considérer :
 
 A9 . **Communication inter-applications et inter-machines** - mardi, semaine 6
 
-• Exploiter le protocole OSC pour communiquer des données entre applications sur une même machine, ou distribuées sur des machines en réseau. Examiner le transfert d’un message entre Processing et TouchDesigner, puis inversement, ainsi que les messages distribués en Multicast. L’exercice proposé consiste à déterminer des ponts entre deux personnes, la première prenant en charge la structuration d’une donnée, et la seconde, son interprétation en image.
+• Exploiter le protocole OSC pour communiquer des données entre applications sur une même machine, ou distribuées sur des machines en réseau. Examiner le transfert d’un message entre Processing et TouchDesigner, puis inversement, ainsi que les messages distribués en Multicast. L’exercice proposé consiste à réaliser les liens de communication entre les machines de deux personnes, la première prenant en charge la structuration d’une donnée, et la seconde, son interprétation en image.
 
 Notions à considérer :
 
-`Librairie OscP5 dans Processing, CHOPs OscIn et OscOut dans TouchDesigner`
+`Librairie OscP5 dans Processing, CHOPs` [OSC In](https://www.derivative.ca/wiki088/index.php?title=OSC_In_CHOP) `et OSC Out dans TouchDesigner`
 
 <br>
 
