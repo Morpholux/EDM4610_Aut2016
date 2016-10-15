@@ -105,3 +105,23 @@ Notions à considérer :
 
 <br>
 
+A10 . **TouchDesigner - survol des «Data operators» (DATs) et du langage Python** - vendredi, semaine 6
+
+• Explorer les méthodes destinées à réaliser la lecture ou l’écriture de données via des scripts. Bien comprendre le principe des références par des expressions Python et être en mesure de lire ou de modifier dynamiquement les paramètres d’opérateurs à l’aide d’exécutables.
+
+Notions à considérer :
+
+[Sweet 16 DATs](https://www.derivative.ca/wiki088/index.php?title=DAT#Sweet_16_DATs) `CHOP Execute`
+
+<br>
+
+A11 . **TouchDesigner - gestion d’instances dans le COMP Geo** - mardi, semaine 7
+
+• Explorer la méthode des instances et comparer celle-ci à la programmation-objet dans Processing. Notons que deux autres méthodes sont à notre disposition dans TouchDesigner : Replicator et Cloning. Ces dernières sont toutefois inefficaces pour un volume important d’objets ou pour disposer de propriétés individualisées.
+
+Notions à considérer :
+
+[Geometry Instancing](https://matthewragan.com/2015/03/29/thp-494-598-instancing-a-closer-look-touchdesigner/) `Geo Component, Replicator Component`
+
+<br>
+
