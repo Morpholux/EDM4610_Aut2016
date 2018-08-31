@@ -1,9 +1,9 @@
 // renaud.jean-francois(arobas)uqam(point)ca
 // Syntaxe Processing version 3.0
-// vendredi, 9 octobre 2015
+// vendredi, 29 octobre 2017
 
 // Exemple de gestion du déplacement par PVector.
-// Cas simple d’un seul mobile à vitesse constante.
+// Cas simple d’un seul mobile à vitesse décroissante.
 // On montre comment réaliser des rebonds sur des parois.
 
 Mobile m1;
@@ -37,17 +37,26 @@ class Mobile {
 
   Mobile() {
     // Position initiale du mobile :
-    loc = new PVector(100, 300);
+    loc = new PVector(100, 300+random(-100, 100));
 
     // C’est maintenant le temps de préciser la direction et l’intensité du déplacement:
     vel = new PVector(1, -0.75, 0);
-    vel.setMag(10);
+    vel.setMag(50);
 
     // On enregistre l’orientation du mobile.
     angle = vel.heading();
   }
 
   void update() {
+    // Réduction progressive de la vitesse
+    if (vel.mag() > 0.2) {
+      vel.mult(0.995);
+    } else {
+      // On annule la vélocité lorsque son vecteur est très petit
+      vel.set(0, 0, 0);
+    }
+
+
     // Comme l’opération est non-statique (le vecteur loc est modifié à chaque cycle du draw)
     // l’emplacement du mobile est régulièrement décalé par le vecteur de vitesse,
     // suivant le même direction et avec la même vélocité.
@@ -83,14 +92,35 @@ class Mobile {
   void rebond() {
     // Évaluation en fonction des limites sur l’axe horizontal.
     if ((loc.x > width-50-zoneTampon)||(loc.x < 50+zoneTampon)) {
-      // Si on frappe le mur, simplement inverser le composant x du vecteur de vélocité
+
+      // Précaution à prendre advenant une vélocité décroissante :
+      // Rabattre la position de l’objet sur la limite de la zone.
+      // On doit éviter de le laisser au-delà de la zone car l’inversion
+      // du vecteur ne pourrait pas suffire à le faire revenir dans la zone.
+      if (loc.x > width-50-zoneTampon) {
+        loc.x = width-50-zoneTampon;
+      } else if (loc.x < 50+zoneTampon) {
+        loc.x = 50+zoneTampon;
+      }
+
+
+      // Ensuite, simplement inverser le composant x du vecteur de vélocité
       // sans toucher aux autres composants.
       vel.set(vel.x * -1, vel.y, vel.z);
+
+      // Réduire la vélocité (simulation d’une perte d’énergie)
+      vel.mult(0.9);
     }
 
     // Évaluation en fonction des limites sur l’axe vertical.
     if ((loc.y > height-50-zoneTampon)||(loc.y < 50+zoneTampon)) {
+      if (loc.y > height-50-zoneTampon) {
+        loc.y = height-50-zoneTampon;
+      } else if (loc.y < 50+zoneTampon) {
+        loc.y = 50+zoneTampon;
+      }
       vel.set(vel.x, vel.y * -1, vel.z);
+      vel.mult(0.99);
     }
   }
 }
